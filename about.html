@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Sea World</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="about-page">
+    <video class="marine-video-bg" autoplay muted loop playsinline>
+        <source src="gallery.mp4" type="video/mp4">
+    </video>
+
+    <!-- Lottie background -->
+    <div id="about-background"></div>
+
+    <!-- Dark overlay -->
+    <div class="about-overlay"></div>
+
+    <div class="about-content">
+
+        <!-- Navbar -->
+        <header class="header">
+
+            <nav class="navbar">
+
+                <a href="index.html" class="brand">
+
+                    <div id="turtle"></div>
+
+                    <span>SEA WORLD</span>
+
+                </a>
+
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="active">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="marinelife.html">
+                            Marine Life
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <!-- Main content -->
+        <main class="about-container">
+
+            <section class="about-hero">
+
+                <span class="about-subtitle">
+                    THE BLUE PLANET
+                </span>
+
+                <h1>
+                    Discover the World
+                    <span>Beneath the Waves</span>
+                </h1>
+
+                <p>
+                    Welcome to Sea World, a place where the beauty,
+                    mystery and importance of our oceans come to life.
+                    Explore extraordinary marine ecosystems and learn
+                    why protecting the ocean is essential for the future
+                    of our planet.
+                </p>
+
+                <a href="#ocean-story" class="explore-button">
+                    Explore Our Story
+                </a>
+
+            </section>
+
+            <section id="ocean-story" class="about-introduction">
+
+                <div class="about-text-card">
+
+                    <span class="section-label">
+                        ABOUT OUR OCEAN
+                    </span>
+
+                    <h2>
+                        The Heart of Our Planet
+                    </h2>
+
+                    <p>
+                        The ocean covers more than 70% of the Earth's
+                        surface and is home to an incredible variety
+                        of marine life. From colourful coral reefs to
+                        mysterious deep-sea environments, every part
+                        of the ocean supports a unique ecosystem.
+                    </p>
+
+                    <p>
+                        It also helps regulate the climate, produces
+                        much of the oxygen we breathe and provides
+                        food and livelihoods for communities around
+                        the world.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="about-cards">
+
+                <article class="about-card">
+
+                    <div class="card-icon">🌊</div>
+
+                    <h3>Our Ocean</h3>
+
+                    <p>
+                        Discover the beauty, power and importance of
+                        the oceans that connect every continent.
+                    </p>
+
+                </article>
+
+                <article class="about-card">
+
+                    <div class="card-icon">🐠</div>
+
+                    <h3>Marine Life</h3>
+
+                    <p>
+                        Explore fascinating animals ranging from tiny
+                        seahorses to the largest whales on Earth.
+                    </p>
+
+                </article>
+
+                <article class="about-card">
+
+                    <div class="card-icon">🌍</div>
+
+                    <h3>Conservation</h3>
+
+                    <p>
+                        Learn how responsible choices can protect
+                        marine habitats for future generations.
+                    </p>
+
+                </article>
+
+            </section>
+
+            <section class="mission-section">
+
+                <div class="mission-card">
+
+                    <span class="section-label">
+                        OUR MISSION
+                    </span>
+
+                    <h2>
+                        Inspiring Ocean Conservation
+                    </h2>
+
+                    <p>
+                        Our mission is to encourage people to explore,
+                        understand and care for the ocean. Through
+                        education and awareness, Sea World celebrates
+                        marine biodiversity and promotes actions that
+                        help reduce pollution, protect wildlife and
+                        preserve ocean habitats.
+                    </p>
+
+                    <a href="marinelife.html" class="secondary-button">
+                        Explore Marine Life
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p>
+                © 2026 Sea World. Explore. Learn. Protect.
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+
+    <script>
+    
+
+        const turtleContainer =
+            document.getElementById("turtle");
+
+        if (turtleContainer && typeof lottie !== "undefined") {
+            lottie.loadAnimation({
+                container: turtleContainer,
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                path: "Sea Turtle.json"
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,877 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body.marine-page {
+    position: relative;
+    min-height: 100vh;
+
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+
+    background: #031725;
+
+    isolation: isolate;
+}
+
+
+/* =========================
+   FULLSCREEN VIDEO
+========================= */
+
+.marine-video-bg {
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100vw !important;
+    max-width: none !important;
+    min-width: 100vw !important;
+
+    height: 100vh !important;
+    min-height: 100vh !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    z-index: 0 !important;
+}
+
+
+/* =========================
+   VIDEO DARK OVERLAY
+========================= */
+
+.marine-video-overlay {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(180deg,
+            rgba(0, 16, 29, 0.28) 0%,
+            rgba(0, 23, 40, 0.55) 45%,
+            rgba(0, 12, 23, 0.9) 100%);
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.marine-content {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.marine-page .header {
+    position: fixed;
+    top: 18px;
+    left: 0;
+
+    width: 100%;
+    padding: 0 4%;
+
+    z-index: 1000;
+}
+
+.marine-page .navbar {
+    width: 100%;
+    max-width: 1390px;
+    min-height: 82px;
+
+    margin: 0 auto;
+    padding: 10px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid rgba(163, 226, 255, 0.26);
+    border-radius: 50px;
+
+    background: rgba(3, 36, 56, 0.56);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.marine-page .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.marine-page #turtle {
+    width: 60px;
+    height: 60px;
+}
+
+.marine-page .menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.marine-page .menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.marine-page .menu a {
+    display: block;
+
+    padding: 12px 18px;
+
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-family: "Cinzel", serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.marine-page .menu a:hover,
+.marine-page .menu a.active {
+    color: #04283a;
+    background: #8cecff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.marine-hero {
+    width: min(1180px, 90%);
+    min-height: 100vh;
+
+    margin: 0 auto;
+    padding-top: 130px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.marine-hero>span {
+    margin-bottom: 18px;
+
+    color: #89e9ff;
+
+    font-family: "Cinzel", serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.marine-hero h1 {
+    max-width: 900px;
+
+    margin: 0 0 24px;
+
+    font-family: "Cinzel", serif;
+    font-size: clamp(58px, 8vw, 105px);
+    line-height: 0.98;
+    letter-spacing: -2px;
+
+    text-shadow:
+        0 12px 32px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(114, 226, 255, 0.08);
+}
+
+.marine-hero p {
+    max-width: 690px;
+
+    margin: 0 0 32px;
+
+    color: rgba(255, 255, 255, 0.87);
+
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.explore-button,
+.protect-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 210px;
+
+    padding: 15px 28px;
+
+    color: #05293d;
+    background: #8cecff;
+
+    border: 1px solid transparent;
+    border-radius: 35px;
+
+    text-decoration: none;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+
+    box-shadow: 0 12px 30px rgba(51, 200, 232, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.explore-button:hover,
+.protect-button:hover {
+    transform: translateY(-5px);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.2),
+        0 0 25px rgba(140, 236, 255, 0.38);
+}
+
+
+/* =========================
+   ANIMALS SECTION
+========================= */
+
+.animals-section {
+    width: min(1240px, 92%);
+
+    margin: 0 auto;
+    padding: 110px 0 120px;
+}
+
+.section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 62px;
+
+    text-align: center;
+}
+
+.section-heading>span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #87eaff;
+
+    font-family: "Cinzel", serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.section-heading h2 {
+    margin: 0 0 18px;
+
+    font-family: "Cinzel", serif;
+    font-size: clamp(42px, 6vw, 67px);
+    line-height: 1.05;
+}
+
+.section-heading p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CARD GRID
+========================= */
+
+.animals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+
+    perspective: 1200px;
+}
+
+
+/* =========================
+   INTERACTIVE CARD
+========================= */
+
+.animal-card {
+    position: relative;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(150, 226, 255, 0.26);
+    border-radius: 30px;
+
+    background: rgba(3, 42, 62, 0.7);
+
+    box-shadow:
+        0 24px 55px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    transform: translateZ(0);
+
+    transition:
+        transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
+        filter 0.45s ease,
+        opacity 0.45s ease,
+        border-color 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+.animal-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 3;
+
+    border-radius: inherit;
+
+    background:
+        radial-gradient(circle at 50% 0%,
+            rgba(133, 236, 255, 0.17),
+            transparent 38%);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity 0.4s ease;
+}
+
+.animal-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 5;
+
+    border-radius: inherit;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(136, 233, 255, 0.12),
+        inset 0 0 35px rgba(110, 226, 255, 0.04);
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   FOCUS OTHER CARDS
+========================= */
+
+.animals-grid:hover .animal-card {
+    opacity: 0.38;
+    filter: blur(3px) saturate(0.72);
+
+    transform: scale(0.94);
+}
+
+.animals-grid .animal-card:hover {
+    opacity: 1;
+    filter: none;
+
+    transform:
+        perspective(1200px) rotateX(2deg) rotateY(-2deg) translateY(-16px) scale(1.06);
+
+    border-color: rgba(134, 235, 255, 0.84);
+
+    box-shadow:
+        0 35px 80px rgba(0, 0, 0, 0.48),
+        0 0 45px rgba(105, 226, 255, 0.38);
+
+    z-index: 50;
+}
+
+.animals-grid .animal-card:hover::before {
+    opacity: 1;
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
+.animal-card img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    transition:
+        transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+        filter 0.6s ease;
+}
+
+.animal-card:hover img {
+    transform: scale(1.16);
+
+    filter: saturate(1.15) contrast(1.06);
+}
+
+
+/* =========================
+   CARD OVERLAY
+========================= */
+
+.animal-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 4;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background:
+        linear-gradient(180deg,
+            rgba(1, 16, 27, 0.03) 0%,
+            rgba(1, 18, 31, 0.12) 28%,
+            rgba(1, 20, 34, 0.65) 67%,
+            rgba(1, 13, 23, 0.98) 100%);
+
+    transform: translateY(29%);
+
+    transition:
+        transform 0.58s cubic-bezier(0.2, 0.8, 0.2, 1),
+        background 0.5s ease;
+}
+
+.animal-card:hover .animal-overlay {
+    transform: translateY(0);
+
+    background:
+        linear-gradient(180deg,
+            rgba(1, 16, 27, 0.12) 0%,
+            rgba(1, 18, 31, 0.33) 35%,
+            rgba(1, 18, 30, 0.76) 68%,
+            rgba(1, 12, 22, 0.99) 100%);
+}
+
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.animal-type {
+    width: fit-content;
+
+    margin-bottom: 12px;
+    padding: 7px 13px;
+
+    color: #062b3e;
+    background: #89eaff;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.animal-card h3 {
+    margin: 0 0 14px;
+
+    font-family: "Cinzel", serif;
+    font-size: 29px;
+    line-height: 1.12;
+
+    text-shadow: 0 8px 22px rgba(0, 0, 0, 0.38);
+}
+
+.animal-card p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.87);
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    opacity: 0;
+    transform: translateY(22px);
+
+    transition:
+        opacity 0.45s ease 0.08s,
+        transform 0.45s ease 0.08s;
+}
+
+.animal-details {
+    margin-top: 17px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    color: #93eaff;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    opacity: 0;
+    transform: translateY(22px);
+
+    transition:
+        opacity 0.45s ease 0.14s,
+        transform 0.45s ease 0.14s;
+}
+
+.animal-card:hover p,
+.animal-card:hover .animal-details {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   PROTECTION SECTION
+========================= */
+
+.protection-section {
+    width: min(930px, 90%);
+
+    margin: 20px auto 120px;
+    padding: 70px 48px;
+
+    text-align: center;
+
+    border: 1px solid rgba(145, 226, 255, 0.24);
+    border-radius: 34px;
+
+    background: rgba(3, 42, 60, 0.58);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.protection-section>span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #8cecff;
+
+    font-family: "Cinzel", serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.protection-section h2 {
+    margin: 0 0 20px;
+
+    font-family: "Cinzel", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+}
+
+.protection-section p {
+    max-width: 760px;
+
+    margin: 0 auto 30px;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.marine-footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    background: rgba(1, 14, 24, 0.76);
+
+    border-top: 1px solid rgba(143, 226, 255, 0.08);
+}
+
+.marine-footer p {
+    margin: 0;
+
+    font-family: "Cinzel", serif;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .marine-page .navbar {
+        padding: 10px 22px;
+    }
+
+    .marine-page .menu {
+        gap: 3px;
+    }
+
+    .marine-page .menu a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .animals-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .animal-card {
+        min-height: 480px;
+    }
+
+    .animals-grid .animal-card:hover {
+        transform:
+            translateY(-12px) scale(1.035);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .marine-page .header {
+        top: 10px;
+        padding: 0 12px;
+    }
+
+    .marine-page .navbar {
+        min-height: 68px;
+        padding: 8px 15px;
+    }
+
+    .marine-page #turtle {
+        width: 46px;
+        height: 46px;
+    }
+
+    .marine-page .brand {
+        font-size: 15px;
+    }
+
+    .marine-page .menu {
+        display: none;
+    }
+
+    .marine-hero {
+        width: 88%;
+        min-height: 100vh;
+
+        padding-top: 100px;
+    }
+
+    .marine-hero>span {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .marine-hero h1 {
+        font-size: clamp(48px, 16vw, 72px);
+        line-height: 1;
+    }
+
+    .marine-hero p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .animals-section {
+        width: 88%;
+        padding: 85px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 42px;
+    }
+
+    .animals-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .animal-card {
+        min-height: 470px;
+    }
+
+    .animals-grid:hover .animal-card {
+        opacity: 1;
+        filter: none;
+        transform: none;
+    }
+
+    .animals-grid .animal-card:hover {
+        transform: translateY(-8px) scale(1.01);
+    }
+
+    .animal-overlay {
+        transform: translateY(0);
+    }
+
+    .animal-card p,
+    .animal-details {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .protection-section {
+        width: 88%;
+
+        padding: 48px 24px;
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+.animal-video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 1;
+
+    transition: 0.6s ease;
+}
+
+.animal-card:hover .animal-video {
+    transform: scale(1.12);
+}
+
+.animal-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+}
+.marine-page #turtle {
+    width: 150px;
+    height: 80px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marine-page #turtle svg {
+    width: 100% !important;
+    height: 100% !important;
+
+    transform: scale(3.5);
+    transform-origin: center center;
+}

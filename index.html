@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sea World | Explore the Ocean</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+        <video class="video-bg" autoplay muted loop playsinline>
+            <source src="see.mp4" type="video/mp4">
+        </video>
+    
+        <div class="video-overlay"></div>
+    
+
+    
+    <div id="background-animation"></div>
+
+    
+    <div class="background-overlay"></div>
+
+    <div class="content">
+
+
+        <header class="header">
+
+            <nav class="navbar">
+
+                <a href="index.html" class="logo-area">
+
+                    <div id="turtle"></div>
+
+                    <h1>SEA WORLD</h1>
+
+                </a>
+
+                <div class="menu">
+
+                    <a href="index.html" class="nav-link active">
+                        Home
+                    </a>
+
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+
+                    <a href="marinelife.html" class="nav-link">
+                        Marine Life
+                    </a>
+
+                    <a href="gallery.html" class="nav-link">
+                        Gallery
+                    </a>
+
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+
+                </div>
+
+                <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open navigation menu">
+
+                    ☰
+
+                </button>
+
+            </nav>
+
+        </header>
+
+
+        <main>
+
+
+            <section class="home-hero">
+
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1100">
+
+                    <p class="hero-eyebrow">
+                        DISCOVER THE BLUE PLANET
+                    </p>
+
+                    <h2>
+                        Explore Life
+                        <span>Beneath the Waves</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Dive into the beauty of the ocean, discover
+                        fascinating marine animals and learn why protecting
+                        underwater life matters for our planet.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="marinelife.html" class="primary-button">
+
+                            Explore Marine Life
+
+                        </a>
+
+                        <a href="gallery.html" class="secondary-button">
+
+                            View Gallery
+
+                        </a>
+
+                    </div>
+
+                    <div class="ocean-stats">
+
+                        <div class="stat-item">
+
+                            <strong class="counter" data-target="70">
+                                0
+                            </strong>
+
+                            <span>
+                                % of Earth covered by ocean
+                            </span>
+
+                        </div>
+
+                        <div class="stat-item">
+
+                            <strong class="counter" data-target="230">
+                                0
+                            </strong>
+
+                            <span>
+                                K+ known marine species
+                            </span>
+
+                        </div>
+
+                        <div class="stat-item">
+
+                            <strong class="counter" data-target="80">
+                                0
+                            </strong>
+
+                            <span>
+                                % of the ocean unexplored
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="featured-card" data-aos="fade-left" data-aos-duration="1100">
+
+                    <div class="featured-glow"></div>
+
+                    <p class="featured-label">
+                        FEATURED SPECIES
+                    </p>
+
+                    <div id="featured-turtle"></div>
+
+                    <h3>
+                        Green Sea Turtle
+                    </h3>
+
+                    <p>
+                        Sea turtles have travelled through the world's oceans
+                        for millions of years and play an important role in
+                        healthy marine ecosystems.
+                    </p>
+
+                    <a href="marinelife.html">
+                        Discover More
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 ABOUT PREVIEW
+            ========================== -->
+
+            <section class="about-preview" data-aos="fade-up">
+
+                <div class="section-heading">
+
+                    <p>
+                        THE BLUE PLANET
+                    </p>
+
+                    <h2>
+                        A World Beneath the Surface
+                    </h2>
+
+                </div>
+
+                <div class="about-preview-grid">
+
+                    <div class="about-preview-text">
+
+                        <p>
+                            The ocean covers most of our planet and supports
+                            an extraordinary variety of life, from tiny
+                            plankton to enormous blue whales.
+                        </p>
+
+                        <p>
+                            It controls climate, produces oxygen and provides
+                            food and livelihoods for communities around the
+                            world.
+                        </p>
+
+                        <a href="about.html" class="text-link">
+
+                            Learn About the Ocean →
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="facts-grid">
+
+                        <article class="fact-card">
+
+                            <span>01</span>
+
+                            <h3>
+                                Climate
+                            </h3>
+
+                            <p>
+                                Oceans absorb heat and influence global
+                                weather systems.
+                            </p>
+
+                        </article>
+
+                        <article class="fact-card">
+
+                            <span>02</span>
+
+                            <h3>
+                                Oxygen
+                            </h3>
+
+                            <p>
+                                Ocean organisms produce a large share of the
+                                oxygen we breathe.
+                            </p>
+
+                        </article>
+
+                        <article class="fact-card">
+
+                            <span>03</span>
+
+                            <h3>
+                                Biodiversity
+                            </h3>
+
+                            <p>
+                                Marine ecosystems support thousands of unique
+                                species.
+                            </p>
+
+                        </article>
+
+                        <article class="fact-card">
+
+                            <span>04</span>
+
+                            <h3>
+                                Protection
+                            </h3>
+
+                            <p>
+                                Healthy oceans are essential for a healthy
+                                future.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 MARINE LIFE PREVIEW
+            ========================== -->
+
+            <section class="marine-preview">
+
+                <div class="section-heading" data-aos="fade-up">
+
+                    <p>
+                        MEET THE OCEAN
+                    </p>
+
+                    <h2>
+                        Discover Marine Life
+                    </h2>
+
+                    <span>
+                        Explore some of the fascinating creatures that call
+                        the ocean home.
+                    </span>
+
+                </div>
+
+
+                <div class="preview-grid">
+
+                    <article class="preview-card" data-aos="zoom-in" data-aos-delay="100">
+
+                        <video autoplay muted loop playsinline>
+
+                            <source src="videos/turtle.mp4" type="video/mp4">
+
+                        </video>
+
+                        <div class="preview-overlay">
+
+                            <span>
+                                MARINE REPTILE
+                            </span>
+
+                            <h3>
+                                Sea Turtle
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="preview-card" data-aos="zoom-in" data-aos-delay="200">
+
+                        <video autoplay muted loop playsinline>
+
+                            <source src="videos/dolphin.mp4" type="video/mp4">
+
+                        </video>
+
+                        <div class="preview-overlay">
+
+                            <span>
+                                MARINE MAMMAL
+                            </span>
+
+                            <h3>
+                                Dolphin
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="preview-card" data-aos="zoom-in" data-aos-delay="300">
+
+                        <video autoplay muted loop playsinline>
+
+                            <source src="videos/clownfish.mp4" type="video/mp4">
+
+                        </video>
+
+                        <div class="preview-overlay">
+
+                            <span>
+                                TROPICAL FISH
+                            </span>
+
+                            <h3>
+                                Clownfish
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="section-button-wrapper">
+
+                    <a href="marinelife.html" class="primary-button">
+
+                        View All Marine Life
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 GALLERY PREVIEW
+            ========================== -->
+
+            <section class="gallery-preview">
+
+                <div class="gallery-preview-content" data-aos="fade-right">
+
+                    <p class="section-label">
+                        OCEAN GALLERY
+                    </p>
+
+                    <h2>
+                        Experience the Beauty of the Deep
+                    </h2>
+
+                    <p>
+                        Explore underwater moments, coral reefs and marine
+                        animals through our immersive ocean gallery.
+                    </p>
+
+                    <a href="gallery.html" class="secondary-button">
+
+                        Open Gallery
+
+                    </a>
+
+                </div>
+
+
+                <div class="gallery-mosaic" data-aos="fade-left">
+
+                    <div class="mosaic-item large">
+
+                        <video autoplay muted loop playsinline>
+
+                            <source src="videos/octopus.mp4" type="video/mp4">
+
+                        </video>
+
+                    </div>
+
+                    <div class="mosaic-item">
+
+                        <video autoplay muted loop playsinline>
+
+                            <source src="videos/shark.mp4" type="video/mp4">
+
+                        </video>
+
+                    </div>
+
+                    <div class="mosaic-item">
+
+                        <video autoplay muted loop playsinline>
+
+                            <source src="videos/jellyfish.mp4" type="video/mp4">
+
+                        </video>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 CONSERVATION CTA
+            ========================== -->
+
+            <section class="conservation-section" data-aos="zoom-in">
+
+                <p>
+                    PROTECT OUR OCEANS
+                </p>
+
+                <h2>
+                    Every Action Creates a Ripple
+                </h2>
+
+                <span>
+                    Learn more about marine life, reduce plastic waste and
+                    help protect the ecosystems beneath the waves.
+                </span>
+
+                <a href="contact.html" class="primary-button">
+
+                    Get in Touch
+
+                </a>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer class="home-footer">
+
+            <div class="footer-brand">
+
+                <h2>
+                    SEA WORLD
+                </h2>
+
+                <p>
+                    Discover, learn and help protect our oceans.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="marinelife.html">Marine Life</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Sea World. All rights reserved.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- Lottie -->
+    <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+        /* Underwater background */
+
+        lottie.loadAnimation({
+            container: document.getElementById("background-animation"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "underwater.json",
+            rendererSettings: {
+                preserveAspectRatio: "xMidYMid slice"
+            }
+        });
+
+
+        /* Navbar turtle */
+
+        lottie.loadAnimation({
+            container: document.getElementById("turtle"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "Sea Turtle.json"
+        });
+
+
+        /* Featured turtle */
+
+        lottie.loadAnimation({
+            container: document.getElementById("featured-turtle"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "Sea Turtle.json"
+        });
+
+
+        /* Scroll animations */
+
+        AOS.init({
+            duration: 900,
+            once: true,
+            offset: 80
+        });
+
+
+        /* Mobile menu */
+
+        const mobileMenuButton =
+            document.getElementById("mobileMenuButton");
+
+        const menu =
+            document.querySelector(".menu");
+
+        mobileMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("open");
+        });
+
+
+        /* Counter animation */
+
+        const counters =
+            document.querySelectorAll(".counter");
+
+        const counterObserver =
+            new IntersectionObserver(entries => {
+
+                entries.forEach(entry => {
+
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+
+                    const counter = entry.target;
+
+                    const target =
+                        Number(counter.dataset.target);
+
+                    let current = 0;
+
+                    const increment =
+                        Math.max(1, Math.ceil(target / 50));
+
+                    const timer =
+                        setInterval(() => {
+
+                            current += increment;
+
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+
+                            counter.textContent = current;
+
+                        }, 30);
+
+                    counterObserver.unobserve(counter);
+
+                });
+
+            }, {
+                threshold: 0.6
+            });
+
+        counters.forEach(counter => {
+            counterObserver.observe(counter);
+        });
+
+    </script>
+
+</body>
+
+</html>
