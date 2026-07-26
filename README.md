@@ -20,14 +20,7 @@ A modern, responsive marine life website built using HTML, CSS, and JavaScript.
 - CSS3
 - JavaScript
 
-## 📷 Preview
-
-![Preview](images/preview.png)
-
-## 🚀 Live Demo
-
-https://yourusername.github.io/Marine-Life-Website/
 
 ## 👩‍💻 Author
 
-Nalina Udaani
+Nalina Udani
